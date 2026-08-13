@@ -138,7 +138,7 @@ with col2:
             return f'background-color: {colors.get(val, "white")}'
 
         st.dataframe(
-            display_df.style.applymap(highlight_quality, subset=['Confidence']),
+            display_df.style.map(highlight_quality, subset=['Confidence']),
             use_container_width=True
         )
 
